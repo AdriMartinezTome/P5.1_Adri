@@ -1,0 +1,97 @@
+// Variables
+$body-bg: #ced4da;
+$font-family-sans-serif: "EB Garamond",
+serif;
+$font-family-monospace: "EB Garamond",
+serif;
+$font-family-base: "EB Garamond",
+serif;
+$font-nav: 'Oswald',
+sans-serif;
+$backCo-header: #4e5944;
+$colorText: #b8c6ac;
+$hoverNav: #f9faff;
+$primary: #4e5944;
+$colorVar:#e9e9e9;
+$textDisabled:#999baa;
+//Import de modulos boostraps
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+/*Sobreescribir clases de margins*/
+.ml-1 {
+    margin-left: (16px) !important;
+}
+
+.mr-1 {
+    margin-right: (16px) !important;
+    ;
+}
+
+.mt-1 {
+    margin-top: (24px) !important;
+}
+
+body {
+    font-family: $font-family-base !important;
+    background-color: $body-bg;
+}
+
+header {
+    .nav {
+        font-family: $font-nav !important;
+        color: $colorText !important;
+        list-style: none;
+        background-color: $backCo-header;
+    }
+
+    a:hover {
+        color: $hoverNav !important;
+    }
+
+    a {
+        color: $colorText !important;
+    }
+
+    .active:hover {
+        color: $colorVar;
+    }
+
+    .disabled {
+        color: $textDisabled !important;
+    }
+}
+
+#bloc1 {
+    background-color: $colorVar;
+
+    img {
+        max-height: 320px;
+    }
+}
+
+#bloc2 {
+    background-color: $colorVar;
+}
+
+#bloc3 {
+    background-color: $colorVar !important;
+}
+
+.row {
+    .card {
+        width: 20rem;
+
+    }
+
+    button {
+        color: white;
+        padding: 1%;
+        margin: 5%;
+    }
+}
+
+#footer {
+    background-color: $primary;
+    height: 65px;
+    color: $colorText;
+}
